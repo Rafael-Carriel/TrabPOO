@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cadastrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container">
+    <form [formGroup]="formCadastrar" (ngSubmit)="submitForm()">
+      <ion-list>
+        <ion-item>
+          <ion-label>
+            Tipo
+          </ion-label>
+          <ion-select formControlName="tipo" placeholder="Tipo do hardware">
+            <ion-select-option value="placaMae">Placa Mãe</ion-select-option>
+            <ion-select-option value="processador">Processador</ion-select-option>
+            <ion-select-option value="memoriaRam">Memória RAM</ion-select-option>
+            <ion-select-option value="fonte">Fonte</ion-select-option>
+            <ion-select-option value="memoriaSec">HD/SSD</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            Marca
+          </ion-label>
+          <ion-input formControlName="marca">
+            
+          </ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label>
+            Modelo
+          </ion-label>
+          <ion-input formControlName="modelo">
+            
+          </ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label>
+            Preço
+          </ion-label>
+          <ion-input formControlName="preco">
+            
+          </ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            Tipo
+          </ion-label>
+          <ion-select formControlName="desconto" placeholder="Tipo do hardware">
+            <ion-select-option value="1">1</ion-select-option>
+            <ion-select-option value="2">2</ion-select-option>
+            <ion-select-option value="3">3</ion-select-option>
+            <ion-select-option value="4">4</ion-select-option>
+            <ion-select-option value="5">5</ion-select-option>
+            <ion-select-option value="6">6</ion-select-option>
+            <ion-select-option value="7">7</ion-select-option>
+            <ion-select-option value="8">8</ion-select-option>
+            <ion-select-option value="9">9</ion-select-option>
+            <ion-select-option value="10">10</ion-select-option>
+            <ion-select-option value="15">15</ion-select-option>
+            <ion-select-option value="20">20</ion-select-option>
+            <ion-select-option value="30">30</ion-select-option>
+            <ion-select-option value="40">40</ion-select-option>
+            <ion-select-option value="50">50</ion-select-option>
+            <ion-select-option value="60">60</ion-select-option>
+            <ion-select-option value="70">70</ion-select-option>
+            <ion-select-option value="80">80</ion-select-option>
+            <ion-select-option value="90">90</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>
+            Quantidade
+          </ion-label>
+          <ion-input formControlName="quantidade">
+            
+          </ion-input>
+        </ion-item>
+      </ion-list>
+    </form>
+
+  </div>
+</ion-content>
